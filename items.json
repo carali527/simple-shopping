@@ -1,0 +1,246 @@
+[
+    {
+        "item": [
+            {
+                "id": "1739",
+                "title": "OPHIDIA MEDIUM TOTE BAG",
+                "price": "2,690",
+                "description": " The Double G remains integral to the design, presented in GG Supreme canvas with a brown leather trim.",
+                "images": "https://media.gucci.com/style/HEXD6D7D2_Center_0_0_1200x1200/1675184547/739730_K9GSG_8358_001_100_0000_Light-Ophidia-medium-tote-bag.jpg"
+            },
+            {
+                "id": "1729",
+                "title": "GUCCI BLONDIE LARGE TOTE BAG",
+                "price": "7,965",
+                "description": "The Round Interlocking G that characterises the Gucci Blondie line originates from the House archives.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1683325843/747372_AAB82_1000_001_100_0000_Light-Gucci-Blondie-large-tote-bag.jpg"
+            },
+            {
+                "id": "1229",
+                "title": "GUCCI BLONDIE SMALL SHOULDER BAG",
+                "price": "2,785",
+                "description": "Signature pieces such as this Gucci Blondie shoulder and crossbody bag reinterpret the emblem as a subtler leather patch detail.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1683585016/742360_1IV0G_2802_002_075_0007_Light-Gucci-Blondie-small-shoulder-bag.jpg"
+            },
+            {
+                "id": "1529",
+                "title": "GUCCI BLONDIE TOP HANDLE BAG",
+                "price": "3,605",
+                "description": "The Round Interlocking G that characterises the Gucci Blondie line originates from the House archives. ",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1679679016/744434_1IV0G_1000_001_054_0000_Light-Gucci-Blondie-top-handle-bag.jpg"
+            },
+            {
+                "id": "1575",
+                "title": "GUCCI BLONDIE SMALL TOTE BAG",
+                "price": "5,965",
+                "description": "This Gucci Blondie tote bag pairs a top handle with a chain shoulder strap to infuse the accessory with a contemporary feel.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1681749952/751518_1AAOW_1000_001_085_0000_Light-Gucci-Blondie-small-tote-bag.jpg"
+            },
+            {
+                "id": "1235",
+                "title": "JUMBO GG BACKPACK",
+                "price": "5,805",
+                "description": "The all-black jumbo GG design returns for Pre-Fall 2023 atop a selection of leather luggage pieces.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1682780403/360_625770_AABZF_1000_001_100_0000_Light-Jumbo-GG-backpack.jpg"
+            },
+            {
+                "id": "12334",
+                "title": "GUCCI DECO MEDIUM TOTE BAG",
+                "price": "6,305",
+                "description": "Revering tradition with a retro feel, the House logo explores new expressions with the Interlocking G hardware on the flap closure.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1683585915/746210_DAAAM_6402_001_087_0000_Light-Gucci-Deco-medium-tote-bag.jpg"
+            },
+            {
+                "id": "1834",
+                "title": "GUCCI DECO MINI SHOULDER BAG",
+                "price": "4,905",
+                "description": "Classic silhouettes and refined materials explore new expressions and a deep-rooted fascination for the past.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1681749043/741457_AAB1Q_6402_001_064_0000_Light-Gucci-Deco-mini-shoulder-bag.jpg"
+            }
+        ],
+        "title": "Bages"
+    },
+    {
+        "item": [
+            {
+                "id": "234",
+                "title": "1953 HORSEBIT LOAFER IN LEATHER",
+                "price": "1,500",
+                "description": "Our 1953 Horsebit loafer in leather. Since the introduction of its classic shape in the 1950s.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1457657054/309701_BLM00_1000_001_100_0000_Light-1953-Horsebit-loafer-in-leather.jpg"
+            },
+            {
+                "id": "2343",
+                "title": "MEN'S INTERLOCKING G SANDAL",
+                "price": "1,965",
+                "description": "The monogram reimagined. This pair of slide sandals is presented in brown leather with a cut-out Interlocking G.",
+                "images": "https://media.gucci.com/style/HEXF1E9FB_Center_0_0_1200x1200/1663955177/723627_US000_2176_001_100_0000_Light-Mens-Interlocking-G-sandal.jpg"
+            },
+            {
+                "id": "2333",
+                "title": "MEN'S GG SNEAKER",
+                "price": "1,130",
+                "description": "A striking silhouette that takes inspiration from the tennis courts.",
+                "images": "https://media.gucci.com/style/HEXD6D7D2_Center_0_0_1200x1200/1675449049/738992_FABQA_9796_001_100_0000_Light-Mens-GG-sneaker.jpg"
+            },
+            {
+                "id": "2337",
+                "title": "MEN'S ACE EMBROIDERED SNEAKER",
+                "price": "1,300",
+                "description": "The Ace low-top sneaker in leather is embellished with the gold embroidered bee against the Web stripe.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1580402705/429446_02JP0_9064_002_100_0000_Light-Mens-Ace-embroidered-sneaker.jpg"
+            },
+            {
+                "id": "2927",
+                "title": "MEN'S GG SNEAKER",
+                "price": "1,390",
+                "description": "Crafted from perforate GG leather, the monogram motif adds a logo twist.",
+                "images": "https://media.gucci.com/style/HEXF1E9FB_Center_0_0_1200x1200/1664577198/726544_AABBV_2742_002_100_0000_Light-Mens-GG-sneaker.jpg"
+            },
+            {
+                "id": "2256",
+                "title": "MEN'S GG EMBOSSED SNEAKER",
+                "price": "1,440",
+                "description": "Crafted from white GG embossed leather, the monogram motif adds a logo twist.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1627489805/669582_1XL10_9014_001_100_0000_Light-Mens-GG-embossed-sneaker.jpg"
+            },
+            {
+                "id": "226",
+                "title": "WOMEN'S DOUBLE G BALLET FLAT",
+                "price": "1,365",
+                "description": "Subtle House details add a logo touch to this pair of ballet flats.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1680628861/754136_BKO00_6701_001_100_0000_Light-Womens-Double-G-ballet-flat.jpg"
+            },
+            {
+                "id": "2208",
+                "title": "WOMEN'S PETITE GG SLINGBACK PUMP",
+                "price": "1,425",
+                "description": "Crafted from yellow leather, a T-strap detail on the front enhances the elegance of the style's classic silhouette.",
+                "images": "https://media.gucci.com/style/HEXF1E9FB_Center_0_0_1200x1200/1663175742/723446_BKO00_9702_001_095_0000_Light-Womens-Petite-GG-slingback-pump.jpg"
+            }
+        ],
+        "title": "Shoes"
+    },
+    {
+        "item": [
+            {
+                "id": "3209",
+                "title": "GUCCI BLONDIE WIDE BELT",
+                "price": "940",
+                "description": "The Gucci Love Parade unfolded along the iconic Hollywood Boulevard.",
+                "images": "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_1200x1200/1648225851/698598_US10G_9022_001_100_0000_Light-Gucci-Blondie-wide-belt.jpg"
+            },
+            {
+                "id": "321",
+                "title": "GUCCI BLONDIE WIDE BELT",
+                "price": "930",
+                "description": "The emblematic Double G is reintroduced for Spring Summer 2020 in a luminous gold-tone, set on a men's smooth black leather belt.",
+                "images": "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_1200x1200/1646242221/698598_US10G_1000_001_100_0000_Light-Gucci-Blondie-wide-belt.jpg"
+            },
+            {
+                "id": "328",
+                "title": "GG MARMONT MATELASSÉ WIDE",
+                "price": "765",
+                "description": "For Pre-Fall 2023, heritage codes continue to be reimagined.",
+                "images": "https://media.gucci.com/style/HEXD6D7D2_Center_0_0_1200x1200/1677194103/400593_UM8IG_5909_001_100_0000_Light-GG-Marmont-Matelass-wide-belt.jpg"
+            },
+            {
+                "id": "3292",
+                "title": "GUCCI BLONDIE BELT",
+                "price": "865",
+                "description": "Playing with this theme, the accessories and pieces of ready-to-wear continue to reimagine and reintroduce heritage details.",
+                "images": "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_1200x1200/1648228505/690557_US10G_1000_001_100_0000_Light-Gucci-Blondie-belt.jpg"
+            },
+            {
+                "id": "3211",
+                "title": "GG MARMONT REVERSIBLE BELT",
+                "price": "920",
+                "description": "This beige and ebony belt in GG Supreme canvas reverses to brown leather.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1634144457/659417_92TIC_9769_001_100_0000_Light-GG-Marmont-reversible-belt.jpg"
+            },
+            {
+                "id": "3771",
+                "title": "GG MARMONT MATELASSÉ WIDE BELT",
+                "price": "1,085",
+                "description": "Crafed from pink Matelassé leather, this wide belt is defined by a gold-toned hardware.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1678922103/400593_UM8IG_6627_001_100_0000_Light-GG-Marmont-Matelass-wide-belt.jpg"
+            },
+            {
+                "id": "372",
+                "title": "LEATHER BELT WITH DOUBLE G BUCKLE",
+                "price": "920",
+                "description": "An unfinished faded leather belt in brown with a Double G buckle.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1581093903/409416_CVE0T_2535_001_100_0000_Light-Leather-belt-with-Double-G-buckle.jpg"
+            },
+            {
+                "id": "3992",
+                "title": "THIN BELT WITH CRYSTAL GUCCI BUCKLE",
+                "price": "1,640",
+                "description": "Classic designs are reinvented through the Gucci lens with standout details.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1682700307/751599_0YAUG_9063_001_100_0000_Light-Thin-belt-with-crystal-Gucci-buckle.jpg"
+            }
+        ],
+        "title": "Belts"
+    },
+    {
+        "item": [
+            {
+                "id": "4912",
+                "title": "GUCCI LINK TO LOVE BAGUETTE DIAMOND RING",
+                "price": "3,790",
+                "description": "The Gucci Link to Love collection is an exploration of modern romance characterizing new symbols of love. ",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1678752082/744971_J8540_5702_001_100_0000_Light-Gucci-Link-to-Love-baguette-diamond-ring.jpg"
+            },
+            {
+                "id": "4911",
+                "title": "GUCCI LINK TO LOVE STRIPED RING",
+                "price": "2,790",
+                "description": "This 18k white gold studded ring has a stackable mechanism.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613671208/662098_J8502_9000_001_100_0000_Light-Gucci-Link-to-Love-striped-ring.jpg"
+            },
+            {
+                "id": "487",
+                "title": "GUCCI LINK TO LOVE BAGUETTE DIAMOND RING",
+                "price": "1,790",
+                "description": "The Gucci Link to Love collection is an exploration of modern romance characterizing new symbols of love.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1678752092/744971_J8568_9066_001_100_0000_Light-Gucci-Link-to-Love-baguette-diamond-ring.jpg"
+            },
+            {
+                "id": "4974",
+                "title": "ICON 18K STAR RING",
+                "price": "2,445",
+                "description": "This precious ring is presented in 18k yellow gold with a delicate band featuring the GG motif.",
+                "images": "https://media.gucci.com/style/HEXF1E9FB_Center_0_0_1200x1200/1664214339/727729_J8500_8000_001_100_0000_Light-Icon-18k-star-ring.jpg"
+            },
+            {
+                "id": "4174",
+                "title": "FLORA 18K DIAMOND RING",
+                "price": "7,330",
+                "description": "The Gucci Flora line plays with the origins of its name to present a selection of pieces with botanical inspirations. ",
+                "images": "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_1200x1200/1649176212/702391_J8540_5702_001_100_0000_Light-Flora-18k-diamond-ring.jpg"
+            },
+            {
+                "id": "4104",
+                "title": "GUCCI LINK TO LOVE ENAMEL AND DIAMOND RING",
+                "price": "3,465",
+                "description": "This 18k yellow gold, black enamel ring has a stackable mechanism and central white diamond.",
+                "images": "https://media.gucci.com/style/HEXEAF2DC_Center_0_0_1200x1200/1647540052/702423_J8642_8031_001_100_0000_Light-Gucci-Link-to-Love-enamel-and-diamond-ring.jpg"
+            },
+            {
+                "id": "4101",
+                "title": "ICON 18K STAR RING",
+                "price": "2,445",
+                "description": "The piece's focal point are the cut-out stars, that recall the Gucci Cosmogonie fashion show. ",
+                "images": "https://media.gucci.com/style/HEXF1E9FB_Center_0_0_1200x1200/1663605990/729460_J8500_5702_001_100_0000_Light-Icon-18k-star-ring.jpg"
+            },
+            {
+                "id": "4004",
+                "title": "GUCCI LINK TO LOVE MIRRORED RING",
+                "price": "1,815",
+                "description": "The collection combines different gold tones and a mix of finishes blending the lines between masculine and feminine.",
+                "images": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1613672107/662194_J8500_8000_001_100_0000_Light-Gucci-Link-to-Love-mirrored-ring.jpg"
+            }
+        ],
+        "title": "Rings"
+    }
+]
