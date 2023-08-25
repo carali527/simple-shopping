@@ -1,12 +1,19 @@
 <script setup lang="ts">
-import allitems from "@/../items.json";
-const Category:(any) = location.hash.substring(location.hash.lastIndexOf("\/") + 1, location.hash.length);
-const allitem = allitems.filter(function(e:any){
-    if (e.title == Category) {
-        return e.item;
+import { ref } from 'vue';
+const items = ref({});
+const Category:(any) = location.hash.substring(2);
+const url:(string) = 'https://dummyjson.com/products/category/' + Category;
+fetch(url)
+.then((res) => {
+    return res.json();
+}).then((data) => {
+    if(data.products.length == 0) {
+        location.hash = '#/404';
     }
-})
-const items:object = allitem[0].item;
+    items.value = data.products;
+}).catch((error) => {
+    location.hash = '#/404';
+});
 function changePage(i: any) {
     location.hash = `#/${Category}/${i.id}`;
 }
@@ -22,11 +29,11 @@ function changePage(i: any) {
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-2 flex justify-center items-center min-h-screen p-12 pt-0">
             <div v-for="(i, key, index) in items" :key="key" :index="index">
                 <div class="group relative" @click.prevent="changePage(i)">
-                    <img :src="i.images" class="group rounded-md" />
+                    <img :src="i.images[0]" class="group rounded-md" />
                     <button class="h-full flex justify-center items-center absolute bottom-0 left-0 right-0 opacity-0 group-hover:opacity-60 bg-black">
                         <div class="items-center justify-center flex flex-col text-white font-bold tarcking-widest pl-2">
                             <p>{{ i.title }}</p>
-                            <p>NZ$ {{ i.price }}</p>
+                            <p>$ {{ i.price }}</p>
                         </div>
                         <div class="text-white font-semibold flex space-x-2 justify-center rounded items-center mt-5 p-4">
                             <svg class="w-8" width="30" height="30" xmlns="http://www.w3.org/2000/svg">

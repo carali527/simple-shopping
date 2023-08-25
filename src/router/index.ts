@@ -11,35 +11,11 @@ const routes:Array<RouteRecordRaw> = [
     }
   },
   {
-    path: '/bages',
-    name: 'bages',
+    path: '/:categories',
+    name: 'categories',
     component: () => import("@/components/Items.vue"),
     meta: {
-      title: 'bages'
-    }
-  },
-  {
-    path: '/shoes',
-    name: 'shoes',
-    component: () => import("@/components/Items.vue"),
-    meta: {
-      title: 'shoes'
-    }
-  },
-  {
-    path: '/belts',
-    name: 'belts',
-    component: () => import("@/components/Items.vue"),
-    meta: {
-      title: 'belts'
-    }
-  },
-  {
-    path: '/rings',
-    name: 'rings',
-    component: () => import("@/components/Items.vue"),
-    meta: {
-      title: 'rings'
+      title: 'categories'
     }
   },
   {
@@ -51,7 +27,7 @@ const routes:Array<RouteRecordRaw> = [
     }
   },
   { 
-    path: '/:path(.*)',
+    path: '/404',
     name: 'notFound',
     component: () => import("@/components/NotFound.vue"),
     meta: {

@@ -1,32 +1,29 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
-import allitems from "@/../items.json";
+import { ref } from 'vue';
 import { useRoute } from 'vue-router';
    
 const route = useRoute();
 const id:(any) = route.params.order;
 const Category:(any) = route.params.categories;
 const submitLoading = ref(false);
-const allitem = allitems.filter(function(e:any){
-  if (e.title == Category) {
-    return e.item;
-  }
-})
-const items = computed(() => {
-  return allitem[0].item.filter(function(e:any){
-    if(e.id == id) {
-      return e;
-    }
-  })
-})
-if(allitem.length == 0 || items.value.length == 0) {
+const items = ref({});
+const itemImage = ref();
+
+fetch('https://dummyjson.com/products/'+id)
+.then((res) => {
+  return res.json();
+}).then((data) => {
+  items.value = data;
+  itemImage.value = data.images[0];
+}).catch(() => {
   location.hash = '#/404';
-}
-function sendIt (images: string, title: string, price: string) {
+});
+
+function sendIt () {
   submitLoading.value = true;
   const headers = new Headers();
   headers.append('Content-Type', 'application/json')
-  const body = { 'title': title, 'images': images, 'price': price}
+  const body = { 'title': items.value.title, 'images': items.value.images, 'price': items.value.price}
   fetch('https://ena8ev5d4j2je.x.pipedream.net', {
     method: 'POST',
     headers,
@@ -47,7 +44,7 @@ function sendIt (images: string, title: string, price: string) {
         <div class="w-full h-56 md:h-96">
           <img
             class="w-full h-full object-cover bg-center rounded-t-lg md:h-full md:rounded-l-lg md:rounded-tr-none"
-            :src="items[0].images"
+            :src="itemImage"
           />
         </div>
         <div
@@ -55,18 +52,18 @@ function sendIt (images: string, title: string, price: string) {
         >
           <p class="mb-2 text-gray-400 tracking-widest text-sm">{{ Category }}</p>
           <h2 class="text-2xl text-gray-900 mb-4">
-            {{ items[0].title }}
+            {{ items.title }}
           </h2>
           <p class="text-gray-500">
-            {{ items[0].description }}
+            {{ items.description }}
           </p>
           <div class="flex space-x-4 items-center mb-4 mt-6">
-            <h2 class="text-3xl text-gray-800">NZ$ {{ items[0].price }}</h2>
+            <h2 class="text-3xl text-gray-800">$ {{ items.price }}</h2>
           </div>
           <button
             v-show="!submitLoading"
             class="bg-gray-900 text-white font-semibold flex space-x-2 w-full justify-center rounded items-center py-2"
-            @click="sendIt(items[0].images,items[0].title,items[0].price)"
+            @click="sendIt()"
           >
             <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
