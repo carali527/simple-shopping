@@ -3,6 +3,8 @@ import { ref } from 'vue';
 const items = ref({});
 const Category:(any) = location.hash.substring(2);
 const url:(string) = 'https://dummyjson.com/products/category/' + Category;
+const loading = ref(false);
+
 fetch(url)
 .then((res) => {
     return res.json();
@@ -11,6 +13,7 @@ fetch(url)
         location.hash = '#/404';
     }
     items.value = data.products;
+    loading.value = true;
 }).catch((error) => {
     location.hash = '#/404';
 });
@@ -26,7 +29,7 @@ function changePage(i: any) {
             <a class="text-3xl"> &gt;</a>
             <a class="font-semibold text-3xl pl-2 pt-12 pb-2 underline">{{ Category }}</a>
         </h2>
-        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-2 flex justify-center items-center min-h-screen p-12 pt-0">
+        <div v-if="loading" class="grid md:grid-cols-3 lg:grid-cols-4 gap-2 flex justify-center items-center min-h-screen p-12 pt-0">
             <div v-for="(i, key, index) in items" :key="key" :index="index">
                 <div class="group relative" @click.prevent="changePage(i)">
                     <img :src="i.images[0]" class="group rounded-md" />
@@ -46,6 +49,59 @@ function changePage(i: any) {
                     </button>
                 </div>
             </div>
+        </div>
+        <div v-if="!loading" class="h-auto w-full min-h-screen flex justify-center items-center">
+            <svg class="h-24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; display: block; shape-rendering: auto; animation-play-state: running; animation-delay: 0s;" height="35px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <g transform="rotate(0 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(30 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(60 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(90 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(120 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(150 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(180 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(210 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(240 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(270 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(300 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g><g transform="rotate(330 50 50)" style="animation-play-state: running; animation-delay: 0s;">
+                    <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#93908f" style="animation-play-state: running; animation-delay: 0s;">
+                    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animate>
+                    </rect>
+                </g>
+            </svg>
         </div>
     </div>
 </template>
