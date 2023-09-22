@@ -1,5 +1,6 @@
 # Intro
-This project using Vue 3, Typescript and TailwindCSS, it is only for the online coding test.
+This project using Vue 3, Typescript and TailwindCSS, it is only for practicing.
+Demo: https://carali527.github.io/simple-shopping/
 
 ## Project Setup
 
