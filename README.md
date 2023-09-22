@@ -1,5 +1,5 @@
 # Intro
-This project using Vue 3, Typescript and TailwindCSS, it is only for practicing.  
+This project using Vue 3, Typescript and TailwindCSS and using dummyJSON for fake data, it is only for practicing.  
 Demo: https://carali527.github.io/simple-shopping/
 
 ## Project Setup
