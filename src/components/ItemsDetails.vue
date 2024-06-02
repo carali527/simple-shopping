@@ -1,42 +1,59 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
-   
+
 const route = useRoute();
-const id:(any) = route.params.order;
-const Category:(any) = route.params.categories;
-const submitLoading = ref(false);
-const items = ref({});
-const itemImage = ref();
+const id: string = route.params.order as string;
+const Category: string = route.params.categories as string;
+
+interface Product {
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+  images: string[];
+}
+
+const items = ref<Product | null>(null);
+const itemImage = ref<string | undefined>(undefined);
 const loading = ref(false);
+const submitLoading = ref(false);
 
-fetch('https://dummyjson.com/products/'+id)
-.then((res) => {
-  return res.json();
-}).then((data) => {
-  items.value = data;
-  itemImage.value = data.images[0];
-  loading.value = true;
-}).catch(() => {
-  location.hash = '#/404';
-});
-
-
-function sendIt () {
-  submitLoading.value = true;
-  const headers = new Headers();
-  headers.append('Content-Type', 'application/json')
-  const body = { 'title': items.value.title, 'images': items.value.images, 'price': items.value.price}
-  fetch('https://ena8ev5d4j2je.x.pipedream.net', {
-    method: 'POST',
-    headers,
-    mode: 'cors',
-    body: JSON.stringify(body)
-  }).then(() => {
-    submitLoading.value = false;
-  }).catch((error) => {
-    console.log('Looks like there was a problem: ', error);
+fetch('https://dummyjson.com/products/' + id)
+  .then((res) => res.json())
+  .then((data) => {
+    items.value = data;
+    itemImage.value = data.images[0];
+    loading.value = true;
+  })
+  .catch(() => {
+    location.hash = '#/404';
   });
+
+function sendIt() {
+  submitLoading.value = true;
+  if (items.value) {
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    const body = {
+      title: items.value.title,
+      images: items.value.images,
+      price: items.value.price,
+    };
+    fetch('https://ena8ev5d4j2je.x.pipedream.net', {
+      method: 'POST',
+      headers,
+      mode: 'cors',
+      body: JSON.stringify(body),
+    })
+      .then(() => {
+        submitLoading.value = false;
+      })
+      .catch((error) => {
+        console.log('Looks like there was a problem: ', error);
+        submitLoading.value = false;
+      });
+  }
 }
 </script>
 <template>
@@ -55,13 +72,13 @@ function sendIt () {
         >
           <p class="mb-2 text-gray-400 tracking-widest text-sm">{{ Category }}</p>
           <h2 class="text-2xl text-gray-900 mb-4">
-            {{ items.title }}
+            {{ items?.title }}
           </h2>
           <p class="text-gray-500">
-            {{ items.description }}
+            {{ items?.description }}
           </p>
           <div class="flex space-x-4 items-center mb-4 mt-6">
-            <h2 class="text-3xl text-gray-800">$ {{ items.price }}</h2>
+            <h2 class="text-3xl text-gray-800">$ {{ items?.price }}</h2>
           </div>
           <button
             v-show="!submitLoading"

@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-const items = ref({});
+interface Product {
+  id: number;
+  images: string[];
+  title: string;
+  price: number;
+}
+
+const items = ref<Product[]>([]);
 const Category:(any) = location.hash.substring(2);
 const url:(string) = 'https://dummyjson.com/products/category/' + Category;
 const loading = ref(false);

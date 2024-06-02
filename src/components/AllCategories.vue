@@ -1,17 +1,26 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-const AllCategories = ref([]);
-const loading = ref(false);
-fetch('https://dummyjson.com/products/categories')
-.then((res) => {
-    return res.json();
-}).then((data) => {
-    AllCategories.value = data;
-}).catch(() => {
-    location.hash = '#/404';
-});
+import { ref, onMounted } from 'vue';
 
-window.setTimeout(( () => loading.value = true ), 500);
+interface Category {
+  name: string;
+}
+
+const AllCategories = ref<Category[]>([]);
+const loading = ref(false);
+
+onMounted(async () => {
+  try {
+    const res = await fetch('https://dummyjson.com/products/categories');
+    const data = await res.json();
+    AllCategories.value = data;
+  } catch {
+    location.hash = '#/404';
+  } finally {
+    window.setTimeout(() => {
+      loading.value = true;
+    }, 500);
+  }
+});
 </script>
 
 <template>
@@ -20,7 +29,7 @@ window.setTimeout(( () => loading.value = true ), 500);
             <h2 class="font-semibold text-3xl pl-2 sm:pl-4 pb-2 underline">All Categories &gt;</h2>
             <div v-if="loading" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 flex justify-center items-center p-4 pt-0">
                 <div class="p-4" v-for="(i, key, index) in AllCategories" :key="key" :index="index">
-                    <a class="text-xl font-semibold underline" :href="'/simple-shopping/#/'+i">{{ i }}</a>
+                    <a class="text-xl font-semibold underline" :href="'/simple-shopping/#/'+i.name">{{ i.name }}</a>
                 </div>
             </div>
             <div v-if="!loading">
